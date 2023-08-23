@@ -5,8 +5,6 @@ import * as S from "./Styles"
 import ImgUser from "../../../assets/img-default-user.jpg"
 
 //icons
-import { BsFillChatSquareTextFill } from "react-icons/bs";
-
 
 export default function TextArea(){
 
