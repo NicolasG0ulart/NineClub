@@ -4,8 +4,6 @@ export const ProfilePost = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
-
-    
 `
 
 export const ImgUser = styled.img`
@@ -13,7 +11,6 @@ export const ImgUser = styled.img`
     height: 45px;
     border-radius: 50%;
     border: solid #fff 2px;
-
 `
 
 export const NameUser = styled.p`
