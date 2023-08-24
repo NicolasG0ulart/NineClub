@@ -9,21 +9,21 @@ export const SectionTextArea = styled.section`
     gap: 30px;
 `
 export const ImgUser = styled.img`
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: solid #A5D7E8 2px;
 `
 export const TextArea = styled.textarea`
     width: 100%;
-    height: 60px;
+    height: 50px;
     outline: none;
     border-radius: 10px;
     border: none;
     background-color: #576CBC;
     resize: none;
     overflow-y: hidden;
-    line-height: 60px;
+    line-height: 50px;
     font-size: 1.3rem;
     padding-inline: 20px;
     font-family: 'Montserrat', sans-serif;

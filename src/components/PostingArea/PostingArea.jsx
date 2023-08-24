@@ -3,6 +3,7 @@ import * as S from "./Styles"
 
 //components
 import TextArea from "./TextAreaPost/TextArea";
+import Post from "./Post/Post";
 
 
 export default function PostingArea(){
@@ -10,8 +11,10 @@ export default function PostingArea(){
     return(
         <S.PostingArea>
             <TextArea/>
-            
-            {/* <Posting/> */}
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
         </S.PostingArea>
     )
 }
