@@ -11,6 +11,12 @@ export const ProfileDiv = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    @media(max-width: 1065px){
+        width: 600px;
+    }
+    @media(max-width: 1024px){
+        display: none;
+    }
 `
 export const ImgUser = styled.img`
     width: 110px;
