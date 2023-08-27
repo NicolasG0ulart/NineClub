@@ -35,4 +35,10 @@ export const TextArea = styled.textarea`
         height: 200px;
         line-height: 35px;
     }
+    @media(max-width: 485px){
+        &::placeholder{
+            font-size: 1rem;
+        }
+    }
+    
 `

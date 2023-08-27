@@ -25,9 +25,15 @@ export const NameUser = styled.div`
     h3{
         font-size: 1.3rem;
         color: #A5D7E8;
+        @media(max-width: 485px){
+            font-size: 1rem;
+        }
     }
     p{
         color: #82aab8;
+        @media(max-width: 485px){
+            font-size: .8rem;
+        }
     }
 `
 export const ContentPost = styled.div`
@@ -41,6 +47,19 @@ export const Buttons = styled.div`
     display: flex;
     gap: 30px;
     justify-content: space-evenly;
+    :nth-child(4){
+        display: none;
+    }
+    @media(max-width: 768px){
+        :nth-child(3){
+            display: none;
+        }
+        :nth-child(4){
+            padding-top: 10px;
+            display: block;
+        }
+    }
+    
 
     button{
         background-color: #576CBC;
@@ -61,6 +80,10 @@ export const Buttons = styled.div`
             background-color: #0B2447;
 
         }
+        @media(max-width: 768px){
+            width: 70px;
+        }
+        
 
     }
 `

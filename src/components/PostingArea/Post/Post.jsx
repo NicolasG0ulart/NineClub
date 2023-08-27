@@ -35,6 +35,7 @@ export default function Post(){
                         <button type="button"><AiFillLike size={20}/>34</button>
                         <button type="button"><AiFillDislike size={20}/>13</button>
                         <button type="button"><BsFillChatSquareDotsFill size={20}/>Mensagem</button>
+                        <button type="button"><BsFillChatSquareDotsFill size={20}/></button>
                     </S.Buttons>
                 </S.InfosUser>
             </S.Post>
