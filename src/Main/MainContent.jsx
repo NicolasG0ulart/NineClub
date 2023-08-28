@@ -14,15 +14,12 @@ export default function Main(){
         justify-content: space-between;
         gap: 60px;
         @media(max-width: 1440px){
-            border: solid blue;
             padding-inline: 30px;
         }
         @media(max-width: 1024px){
             justify-content: center;
         }
     `
-
-
     return(
         <Content>
             <Profile/>

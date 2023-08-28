@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const Post = styled.div`
+    position: relative;
     margin-top: 20px;
     padding: 20px 20px;
     background-color: #19376D;
@@ -13,6 +14,10 @@ export const ImgUser = styled.img`
     height: 50px;
     border-radius: 50%;
     border: solid #A5D7E8 2px;
+    @media(max-width: 768px){
+        position: absolute;
+        top: 15px;
+    }
 `
 export const InfosUser = styled.div`
     width: 100%;
@@ -35,6 +40,13 @@ export const NameUser = styled.div`
             font-size: .8rem;
         }
     }
+    @media(max-width: 768px){
+        padding: 0 65px;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+
 `
 export const ContentPost = styled.div`
     padding-top: 20px;
@@ -59,8 +71,6 @@ export const Buttons = styled.div`
             display: block;
         }
     }
-    
-
     button{
         background-color: #576CBC;
         color: #A5D7E8;
@@ -69,12 +79,10 @@ export const Buttons = styled.div`
         border: none;
         height: 50px;
         width: 150px;
-
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
-
         &:hover{
             cursor: pointer;
             background-color: #0B2447;
@@ -83,7 +91,5 @@ export const Buttons = styled.div`
         @media(max-width: 768px){
             width: 70px;
         }
-        
-
     }
 `
