@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components"
 
 //components
-import Profile from "../components/ProfileHome/Profile";
-import PostingArea from "../components/PostingArea/PostingArea";
+import Profile from "../../../components/ProfileHome/Profile";
+import PostingArea from "../../../components/PostingArea/PostingArea";
 
 export default function Main(){
 

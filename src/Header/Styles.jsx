@@ -14,5 +14,8 @@ export const Header = styled.header`
         span{
             font-size: 1rem;
         }
+        &:hover{
+            cursor: pointer;
+        }
     }
 `

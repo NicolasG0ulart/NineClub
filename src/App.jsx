@@ -1,9 +1,19 @@
 import React from "react";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, styled } from "styled-components";
+
+//react router
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 //components
 import Header from "./Header/Header";
-import Main from "./Main/MainContent.jsx";
+import Main from "./Pages/Home/Main/MainContent";
+import Login from "./Pages/Login/Login";
+
+
+// Links === Link + Stylized
+export const LinkS = styled(Link)`
+  text-decoration: none;
+`
 
 export default function NineClub() {
   const GlobalStyle = createGlobalStyle`
@@ -15,17 +25,25 @@ export default function NineClub() {
   body{
     background-color: #0B2447;
   }
-  h1, h2, h3, h4, h5, p, li, button{
+  h1, h2, h3, h4, h5, p, li, button, label{
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: #fff;
   }
-`;
+`
+
 return (
   <>
     <GlobalStyle />
-    <Header/>
-    <Main/>
+    <Router>
+      <Header/>
+      
+      {/* ROTAS AINDA EM DESENVOLVIMENO, PATH NÃO "OFICIAL" PARA OS ELEMENTOS */}
+      <Routes>
+        <Route path="/home" element={<Main/>}/>
+        <Route path="/" element={<Login/>}/>
+      </Routes>
+    </Router>
   </>
 );
 }
